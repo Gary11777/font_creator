@@ -1,0 +1,35 @@
+/* Begin - target PC */
+html, body {
+    width: 100%;
+    margin: 0;
+    border: 0;
+    padding: 0;
+    font-family: Verdana, Geneva, Arial, sans-serif;
+    font-size: 18px;
+    line-height: 1.5;
+    color: #696969;
+    background-color: #dc143c;
+}
+.container {
+    width: 100%;
+    max-width: 1024px;
+    margin: 0 auto;
+    border: 1px solid #000000;
+    padding: 0 15px;
+    background-color: #7fffd4;
+}
+.logo {
+    float: left;
+}
+nav {
+    float: right;
+}
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+nav li {
+    display: inline-block;
+}
+/* End - target PC */
