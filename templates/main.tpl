@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="css/style.css" />
     <!-- <link rel="shortcut icon" href="pic/favicon.ico" /> -->
     <title>Font Creator v.1</title>
 </head>
@@ -11,7 +11,7 @@
     <header>
         <div class="container">
             <!-- <div class="main_menu"> -->
-                <a href="{FILE_ID}" class="logo">{LABEL="page_head_general"}</a>
+                <a href="{FILE_ID}" class="logo"></a>
                 <nav>
                     <ul>
                         {LABEL="menu_point"}
