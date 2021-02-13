@@ -64,7 +64,7 @@ class Template
 
     private function processSubtemplates(array $tn): string
     {
-        $subtemplate_name = '/templates/' . $tn[1];
+        $subtemplate_name = 'templates/' . $tn[1];
         if (is_file($subtemplate_name)) {
             return file_get_contents($subtemplate_name);
         } else {

@@ -1,0 +1,1 @@
+<li><a href="{FILE_ID}">{LABEL="menu_point"}</a></li>
