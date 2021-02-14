@@ -22,7 +22,7 @@ require_once('db/menu_point.php');
 // Set main template
 $template_object->setMainTemplate('templates/main.tpl');
 // Set point of menu
-$template_object->setLabels($menu_points);
+$template_object->setMenuPoints($menu_points);
 
 // ----- MAIN LOGIC HERE -----
 // ---------------------------

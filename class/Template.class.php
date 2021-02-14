@@ -7,6 +7,8 @@ class Template
     private $template;
     private $placeholders = array();
     private $labels = array();
+    private $menu_points = array();
+    private $menu_template;
 
     public function setMainTemplate(string
                                     $main_template_filename):
@@ -19,6 +21,19 @@ class Template
 
         $this->template = file_get_contents
         ($main_template_filename);
+        // Set amount of menu points
+        array($this, 'setAmountOfMenuPoints');
+    }
+
+    // Set amount of menu points
+    private function setAmountOfMenuPoints(): string
+    {
+
+        for ($i=0; $i = count($this->menu_points); $i++) {
+            $this->menu_template = file_get_contents
+            (templates/main_menu.tpl);
+
+        }
     }
 
     public function setPlaceholderDirect(string $name, string
@@ -37,6 +52,11 @@ class Template
     public function setLabels(array $labels_array): void
     {
         $this->labels = $labels_array;
+    }
+
+    public function setMenuPoints(array $menu_points): void
+    {
+        $this->menu_points = $menu_points;
     }
 
     private function processDV(array $dv): string
@@ -62,6 +82,17 @@ class Template
         }
     }
 
+    private function processMenuPoints(array $mp): string
+    {
+        $menu_name = $mp[1];
+        if (isset($this->menu_points[$menu_name])) {
+            return $this->menu_points[$menu_name];
+        } else {
+            throw new Exception('Menu Point [' .
+                $menu_name . '] not found.');
+        }
+    }
+
     private function processSubtemplates(array $tn): string
     {
         $subtemplate_name = 'templates/' . $tn[1];
@@ -75,7 +106,7 @@ class Template
 
     public function processTemplate(): void
     {
-        while (preg_match("/{FILE=\"(.*)\"}|{DV=\"(.*)\"}|{LABEL=\"(.*)\"}/Ui",
+        while (preg_match("/{FILE=\"(.*)\"}|{DV=\"(.*)\"}|{LABEL=\"(.*)\"}|{MENU_POINT=\"(.*)\"}/Ui",
             $this->template)) {
             $this->template = preg_replace_callback(
                 "/{DV=\"(.*)\"}/Ui",
@@ -90,6 +121,11 @@ class Template
             $this->template = preg_replace_callback(
                 "/{FILE=\"(.*)\"}/Ui",
                 array($this, 'processSubtemplates'),
+                $this->template
+            );
+            $this->template = preg_replace_callback(
+                "/{MENU_POINT=\"(.*)\"}/Ui",
+                array($this, 'processMenuPoints'),
                 $this->template
             );
 
