@@ -33,7 +33,6 @@ footer {
 }
 nav {
     float: right;
-    border: 1px solid #ffffff;
 }
 a.logo {
     float: left;
@@ -49,6 +48,7 @@ nav ul {
 }
 nav li {
     display: inline-block;
+    margin-right: 7px;
 }
 .row {
     margin-bottom: 7px;

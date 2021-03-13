@@ -1,5 +1,7 @@
 <?php
 
 $menu_points = array(
-    "menu_point" => "link1"
+    "index.html" => "Home",
+    "main.html" => "Main",
+    "third.html" => "Third"
 );

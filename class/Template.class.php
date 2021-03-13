@@ -21,19 +21,6 @@ class Template
 
         $this->template = file_get_contents
         ($main_template_filename);
-        // Set amount of menu points
-        array($this, 'setAmountOfMenuPoints');
-    }
-
-    // Set amount of menu points
-    private function setAmountOfMenuPoints(): string
-    {
-
-        for ($i=0; $i = count($this->menu_points); $i++) {
-            $this->menu_template = file_get_contents
-            (templates/main_menu.tpl);
-
-        }
     }
 
     public function setPlaceholderDirect(string $name, string
@@ -84,9 +71,15 @@ class Template
 
     private function processMenuPoints(array $mp): string
     {
-        $menu_name = $mp[1];
-        if (isset($this->menu_points[$menu_name])) {
-            return $this->menu_points[$menu_name];
+        $menu = $mp[1];
+        if (isset($this->menu_points)) {
+            $whole_menu = "";
+            foreach ($this->menu_points as $link =>
+                     $menu_name) {
+                $whole_menu .= "<li><a 
+                href=\"{$link}\">{$menu_name}</a></li>";
+            }
+            return $whole_menu;
         } else {
             throw new Exception('Menu Point [' .
                 $menu_name . '] not found.');
