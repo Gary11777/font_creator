@@ -10,17 +10,24 @@
     <!-- header +++ -->
     <header>
         <div class="container">
-            <!-- <div class="main_menu"> -->
-                <a href="{FILE_ID}" class="logo"><img src="images/logo.png"></a>
-                <nav>
+            <div class="row">
+                <a href="{FILE_ID}" class="logo"><img src="images/logo.png" alt="Logo"></a>
+            </div>
+            <div class="row">
+                <nav class="main_menu_nav">
                     <ul>
                         {FILE="main_menu.tpl"}
                     </ul>
                 </nav>
-           <!-- </div> -->
-            <!-- <div class="second_menu">
-
-            </div> -->
+            </div>
+            <div class="row">
+                <hr class="hr_menu">
+                <nav class="second_menu_nav">
+                    <ul>
+                        {FILE="second_menu.tpl"}
+                    </ul>
+                </nav>
+            </div>
         </div>
     </header>
     <!-- header --- -->

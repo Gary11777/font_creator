@@ -1,0 +1,1 @@
+{MENU_POINT="menu_point"}

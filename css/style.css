@@ -5,7 +5,7 @@ html, body {
     border: 0;
     padding: 0;
     font-family: Verdana, Geneva, Arial, sans-serif;
-    font-size: 18px;
+    font-size: 14px;
     line-height: 1.5;
     color: #696969;
     background-color: #dbe2df;
@@ -31,24 +31,50 @@ footer {
     display: table;
     clear: both;
 }
-nav {
-    float: right;
-}
 a.logo {
     float: left;
 }
-nav a {
-    text-decoration: none;
-    line-height: 38px;
+.main_menu_nav {
+    float: left;
 }
-nav ul {
+.main_menu_nav a {
+    text-decoration: none;
+    line-height: 80%;
+    font-size: 110%;
+}
+.main_menu_nav ul {
     margin: 0;
     padding: 0;
     list-style: none;
 }
-nav li {
+.main_menu_nav li {
     display: inline-block;
     margin-right: 7px;
+}
+
+.second_menu_nav {
+    float: left;
+}
+.second_menu_nav a {
+    text-decoration: none;
+    line-height: 80%;
+    font-size: 90%;
+}
+.second_menu_nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.second_menu_nav li {
+    display: inline-block;
+    margin-right: 7px;
+}
+
+.hr_menu {
+    border: 0;
+    height: 0;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
 }
 .row {
     margin-bottom: 7px;
