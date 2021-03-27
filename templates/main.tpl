@@ -16,7 +16,7 @@
             <div class="row">
                 <nav class="main_menu_nav">
                     <ul>
-                        {FILE="main_menu.tpl"}
+                        {MENU_POINT="main_menu"}
                     </ul>
                 </nav>
             </div>
@@ -24,7 +24,7 @@
                 <hr class="hr_menu">
                 <nav class="second_menu_nav">
                     <ul>
-                        {FILE="second_menu.tpl"}
+                        {MENU_POINT="second_menu"}
                     </ul>
                 </nav>
             </div>
@@ -37,17 +37,21 @@
         <!-- main container +++ -->
         <div class="container">
             <div class="row">
-                <div class="col-1-3"></div>
-                <div class="col-2-3"></div>
+                <div class="col-20">
+                    <div class="second_row">
+                        <div class="col-25"></div>
+                        <div class="col-25"></div>
+                        <div class="col-25"></div>
+                        <div class="col-25"></div>
+                    </div>
+                </div>
+                <div class="col-40"></div>
+                <div class="col-40"></div>
             </div>
             <div class="row">
-                <div class="col-1-2"></div>
-                <div class="col-1-2"></div>
-            </div>
-            <div class="row">
-                <div class="col-1-4"></div>
-                <div class="col-1-4"></div>
-                <div class="col-1-2"></div>
+                <div class="col-20"></div>
+                <div class="col-40"></div>
+                <div class="col-40"></div>
             </div>
         </div>
         <!-- main container --- -->
@@ -58,9 +62,9 @@
     <footer>
         <div class="container">
             <div class="row">
-                <div class="col-1-3"></div>
-                <div class="col-1-3"></div>
-                <div class="col-1-3"></div>
+                <div class="col-20"></div>
+                <div class="col-40"></div>
+                <div class="col-40"></div>
             </div>
     </footer>
     <!-- footer --- -->

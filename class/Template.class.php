@@ -71,6 +71,21 @@ class Template
 
     private function processMenuPoints(array $mp): string
     {
+        $type_of_menu = $mp[1];
+        if (isset($this->menu_points[$type_of_menu])) {
+            $whole_menu = "";
+            foreach ($this->menu_points[$type_of_menu] as
+                     $link => $menu_name) {
+                $whole_menu .= "<li><a 
+                href=\"{$link}\">{$menu_name}</a></li>";
+            }
+            return $whole_menu;
+        } else {
+            throw new Exception('Menu Point [' .
+                $menu_name . '] not found.');
+        }
+
+        /*
         $menu = $mp[1];
         if (isset($this->menu_points)) {
             $whole_menu = "";
@@ -84,6 +99,7 @@ class Template
             throw new Exception('Menu Point [' .
                 $menu_name . '] not found.');
         }
+        */
     }
 
     private function processSubtemplates(array $tn): string
