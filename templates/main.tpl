@@ -38,12 +38,41 @@
         <div class="container">
             <div class="row">
                 <div class="col-20">
-                    <div class="second_row">
-                        <div class="col-25"></div>
-                        <div class="col-25"></div>
-                        <div class="col-25"></div>
-                        <div class="col-25"></div>
+                    <div id="left_menu">
+                        <button class="left-menu"></button>
+                        <button class="left-menu"></button>
+                        <button class="left-menu"></button>
+
+                        <button class="left-menu"></button>
+                        <button class="left-menu"></button>
+                        <button class="left-menu"></button>
+
+                        <button class="left-menu"></button>
+                        <button class="left-menu"></button>
+                        <button class="left-menu"></button>
+
+                        <button class="left-menu"></button>
+                        <button class="left-menu"></button>
+                        <button class="left-menu"></button>
+
+                        <button class="left-menu"></button>
+                        <button class="left-menu"></button>
+                        <button class="left-menu"></button>
                     </div>
+                    <!--
+                    <div id="left_menu">
+                        <div class="second_row">
+                            <div class="col-33"></div>
+                            <div class="col-33"></div>
+                            <div class="col-33"></div>
+                        </div>
+                        <div class="second_row">
+                            <div class="col-33"></div>
+                            <div class="col-33"></div>
+                            <div class="col-33"></div>
+                        </div>
+                    </div>
+                    -->
                 </div>
                 <div class="col-40"></div>
                 <div class="col-40"></div>

@@ -22,7 +22,7 @@ footer {
     min-height: 50px;
     margin: 0 auto;
     border: 1px solid #797979;
-    padding: 5px;
+    padding: 0;
     background-color: #ffdf7f;
 }
 /* Очистка потока */
@@ -78,7 +78,7 @@ a.logo {
 }
 
 .row {
-    margin-bottom: 5px;
+    margin: 0;
 }
 .row div {
     min-height: 50px;
@@ -102,6 +102,12 @@ a.logo {
     background-color: #bc8f8f;
     border: 1px solid #f0ffff;
 }
+.col-33 {
+    width: 32%;
+    float: left;
+    background-color: #bc8f8f;
+    border: 1px solid #f0ffff;
+}
 .col-35 {
     width: 34%;
     float: left;
@@ -114,8 +120,17 @@ a.logo {
     background-color: #87cefa;
     border: 1px solid #f0ffff;
 }
-
 .second_row div {
-    min-height: 25px;
+
+}
+#left_menu {
+    width: 70px;
+    border: 1px solid black;
+    margin: 0;
+    padding: 0;
+}
+.left-menu {
+    width: 20px;
+    height: 20px;
 }
 /* End - target PC */
