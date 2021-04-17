@@ -124,13 +124,47 @@ a.logo {
 
 }
 #left_menu {
-    width: 70px;
-    border: 1px solid black;
-    margin: 0;
+    width: 130px;
+    border: 0;
+    margin: auto;
     padding: 0;
 }
 .left-menu {
-    width: 20px;
-    height: 20px;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    margin: 0 0 5px 0;
+}
+
+.matrix8 {
+    border-spacing: 0;
+    background-color: #ffffff;
+    margin: 7px auto;
+
+}
+.matrix8 td {
+    width: 22px;
+    height: 22px;
+    border-top: 1px solid gray;
+    border-left: 1px solid gray;
+}
+.matrix8 td:last-child {
+    border-right: 1px solid gray;
+}
+.matrix8 tr:last-child td {
+    border-bottom: 1px solid gray;
+}
+
+.name_of_block {
+    margin: 1px 0 5px 7px;
+    padding: 0;
+    font-size: 80%;
+}
+
+#result_code {
+    background-color: #ffffff;
+    width: 80%;
+    height: 100px;
+    margin: 7px auto;
 }
 /* End - target PC */
