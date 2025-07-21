@@ -2,12 +2,16 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Create and customize bitmap fonts with Font Creator">
+    <link rel="preload" href="css/style.css" as="style">
     <link rel="stylesheet" href="css/style.css" />
-    <script type="javascript" src="js/matrix.js"></script>
-    <!-- <link rel="shortcut icon" href="pic/favicon.ico" /> -->
     <title>Font Creator v.1</title>
 </head>
 <body>
+    <!-- Skip to main content for accessibility -->
+    <a href="#main-content" class="skip-link visually-hidden">Skip to main content</a>
+    
     <!-- header +++ -->
     <header>
         <div class="container">
@@ -34,7 +38,7 @@
     <!-- header --- -->
 
     <!-- main +++ -->
-    <div class="main">
+    <main id="main-content" class="main">
         <!-- main container +++ -->
         <div class="container">
             <div class="row">
@@ -160,17 +164,24 @@
         </div>
         <!-- main container --- -->
     </div>
+    </main>
     <!-- main --- -->
 
     <!-- footer +++ -->
     <footer>
         <div class="container">
             <div class="row">
-                <div class="col-20"></div>
+                <div class="col-20">
+                    <p>&copy; <?= date('Y') ?> Font Creator</p>
+                </div>
                 <div class="col-40"></div>
                 <div class="col-40"></div>
             </div>
+        </div>
     </footer>
     <!-- footer --- -->
+
+    <!-- Scripts at the end for better performance -->
+    <script src="js/matrix.js" defer></script>
 </body>
 </html>
