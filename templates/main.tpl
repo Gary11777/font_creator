@@ -6,8 +6,7 @@
     <meta name="description" content="Create and customize bitmap fonts with Font Creator">
     <link rel="preload" href="css/style.css" as="style">
     <link rel="stylesheet" href="css/style.css" />
-    <link rel="icon" href="images/favicon.ico" sizes="any">
-    <title>Font Creator v.1 - Bitmap Font Designer</title>
+    <title>Font Creator v.1</title>
 </head>
 <body>
     <!-- Skip to main content for accessibility -->
@@ -45,37 +44,30 @@
             <div class="row">
                 <div class="col-20">
                     <div id="left_menu">
-                        <div class="row">
-                            <button class="left-menu" data-value="1" aria-label="Tool 1">1</button>
-                            <button class="left-menu" data-value="2" aria-label="Tool 2">2</button>
-                            <button class="left-menu" data-value="3" aria-label="Tool 3">3</button>
-                        </div>
-                        <div class="row">
-                            <button class="left-menu" data-value="4" aria-label="Tool 4">4</button>
-                            <button class="left-menu" data-value="5" aria-label="Tool 5">5</button>
-                            <button class="left-menu" data-value="6" aria-label="Tool 6">6</button>
-                        </div>
-                        <div class="row">
-                            <button class="left-menu" data-value="7" aria-label="Tool 7">7</button>
-                            <button class="left-menu" data-value="8" aria-label="Tool 8">8</button>
-                            <button class="left-menu" data-value="9" aria-label="Tool 9">9</button>
-                        </div>
-                        <div class="row">
-                            <button class="left-menu" data-value="10" aria-label="Tool 10">10</button>
-                            <button class="left-menu" data-value="11" aria-label="Tool 11">11</button>
-                            <button class="left-menu" data-value="12" aria-label="Tool 12">12</button>
-                        </div>
-                        <div class="row">
-                            <button class="left-menu" data-value="13" aria-label="Tool 13">13</button>
-                            <button class="left-menu" data-value="14" aria-label="Tool 14">14</button>
-                            <button class="left-menu" data-value="15" aria-label="Tool 15">15</button>
-                        </div>
+                        <button class="left-menu">1</button>
+                        <button class="left-menu">2</button>
+                        <button class="left-menu">3</button>
+
+                        <button class="left-menu">4</button>
+                        <button class="left-menu">5</button>
+                        <button class="left-menu">6</button>
+
+                        <button class="left-menu">7</button>
+                        <button class="left-menu">8</button>
+                        <button class="left-menu">9</button>
+
+                        <button class="left-menu">10</button>
+                        <button class="left-menu">11</button>
+                        <button class="left-menu">12</button>
+
+                        <button class="left-menu">13</button>
+                        <button class="left-menu">14</button>
+                        <button class="left-menu">15</button>
                     </div>
                 </div>
                 <div class="col-40">
-                    <h2 class="name_of_block">Character editor: width=8 height=8</h2>
-                    <!-- Pixel grid for character editing -->
-                    <table id="pixel-grid" class="matrix8" role="grid" aria-label="8x8 pixel editor grid">
+                    <p class="name_of_block">Character editor: width=8 height=8</p>
+                    <table class="matrix8">
                         <tr>
                             <td></td>
                             <td></td>
